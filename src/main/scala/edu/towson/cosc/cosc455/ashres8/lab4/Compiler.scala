@@ -15,7 +15,7 @@ package edu.towson.cosc.cosc455.ashres8.lab4
 
 import scala.io.Source
 
-object Compiler {
+object Compiler{
 
   // currentToken variable
   var currentToken : String = ""
@@ -42,7 +42,7 @@ object Compiler {
         println("The sentence '" + line + "' does not follow the BNF grammar.")
       // If no syntax error was found, print that the sentence does not follow the grammar.
       else
-       println("The sentence '" + line + "' follows the BNF grammar.")
+        println("The sentence '" + line + "' follows the BNF grammar.")
 
       println
     }

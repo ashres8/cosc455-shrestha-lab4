@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="cosc455-shrestha-lab4:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/cosc455_shrestha_lab4_jar</output-path>
+    <root id="root">
+      <element id="archive" name="cosc455-shrestha-lab4.jar">
+        <element id="module-output" name="simplecompiler" />
+        <element id="module-output" name="simplecompiler-build" />
+      </element>
+      <element id="library" level="module" name="SBT: sbt-and-plugins" module-name="simplecompiler-build" />
+      <element id="library" level="project" name="scala-sdk-2.11.8" />
+    </root>
+  </artifact>
+</component>

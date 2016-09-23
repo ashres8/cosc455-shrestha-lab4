@@ -21,6 +21,7 @@ class SyntaxAnalyzer {
   def Sentence() = {
     resetError()
     if(!errorFound) NounPhrase()
+    if(!errorFound) Adverb()
     if(!errorFound) Verb()
     if(!errorFound) NounPhrase()
   }
@@ -74,9 +75,5 @@ class SyntaxAnalyzer {
   def Adverb() = {
     if(ADVERB contains Compiler.currentToken)
       Compiler.Scanner.getNextToken()
-    else {
-      println("SYNTAX ERROR - An adverb was expected when '" + Compiler.currentToken + "' was found.")
-      setError()
-    }
   }
 }
